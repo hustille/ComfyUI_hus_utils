@@ -1,0 +1,6 @@
+name,positive prompt (g),supporting terms (l),negative_prompt
+none,,,
+base,{prompt},,"text, watermark, bad hands, bad anatomy, missing limbs, additional limbs, mutated, ugly, sloppy"
+generic,breathtaking {prompt},"professional, highly detailed","abstract glitch, blurry"
+Photography,cinematic photograph of {prompt},"bokeh, f1.8, 35mm photograph, film, shallow depth of field, professional, highly detailed","noise, grit, blurry, malformed, warped, deformed"
+Oil Painting,beautiful oil painting of,"professional, art, detailed","photo, photorealistic, photographic, deformed, realism, ugly"
