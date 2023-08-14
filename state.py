@@ -113,9 +113,9 @@ class BatchState:
         old = self.state_hash
         self.state_hash = self.collect_state(extra_pnginfo, prompt)
         if self.state_hash == old:
-            self.count = 0
+            self.count += 1
             return (0, self.state_hash, self.count, self.count, )
-        self.count += 1
+        self.count = 0
         return (1, self.state_hash, self.count, self.count, )
 
     @classmethod
