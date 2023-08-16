@@ -604,8 +604,8 @@
         1,
         "fixed",
         30,
-        8,
-        "dpmpp_2m_sde_gpu",
+        7,
+        "dpmpp_2m",
         "karras",
         0,
         20,
@@ -620,8 +620,8 @@
         -369
       ],
       "size": {
-        "0": 315,
-        "1": 606
+        "0": 320,
+        "1": 630
       },
       "flags": {},
       "order": 12,
@@ -684,7 +684,7 @@
         30,
         20,
         7,
-        "dpmpp_2m_sde_gpu",
+        "dpmpp_2m",
         "karras",
         0,
         10000,
@@ -746,8 +746,8 @@
         1,
         "fixed",
         30,
-        8,
-        "dpmpp_2m_sde_gpu",
+        7,
+        "dpmpp_2m",
         "karras",
         20,
         10000,
@@ -839,13 +839,13 @@
       "id": 9,
       "type": "SaveImage",
       "pos": [
-        2014.1724880000002,
-        -373.70633999999995
+        2491,
+        -378
       ],
-      "size": {
-        "0": 210,
-        "1": 270
-      },
+      "size": [
+        1041.4834836796867,
+        1096.1387496679683
+      ],
       "flags": {},
       "order": 16,
       "mode": 0,
@@ -858,20 +858,20 @@
       ],
       "properties": {},
       "widgets_values": [
-        "ComfyUI"
+        "ksampler_combined"
       ]
     },
     {
       "id": 28,
       "type": "SaveImage",
       "pos": [
-        2465,
-        298
+        3556,
+        -372
       ],
-      "size": {
-        "0": 315,
-        "1": 270
-      },
+      "size": [
+        1041.4325878906257,
+        1090.5336462402345
+      ],
       "flags": {},
       "order": 17,
       "mode": 0,
@@ -884,7 +884,7 @@
       ],
       "properties": {},
       "widgets_values": [
-        "ComfyUI"
+        "ksampler_separate"
       ]
     }
   ],
