@@ -41,7 +41,7 @@ def sample_refined(model, refiner_model, noise, steps, cfg, sampler_name, schedu
     samples = samples.cpu()
 
     cleanup_additional_models(models)
-    cleanup_additional_models(refiner_model)
+    cleanup_additional_models(refiner_models)
     return samples
 
 
