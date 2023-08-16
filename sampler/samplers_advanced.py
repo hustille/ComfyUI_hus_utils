@@ -19,8 +19,8 @@ class KSamplerWithRefiner:
         self.model_patcher = model
         self.refiner_model_patcher = refiner_model
 
-        self.model = model
-        self.refiner_model = refiner_model
+        self.model = model.model
+        self.refiner_model = refiner_model.model
 
         self.model_denoise = CFGNoisePredictor(self.model)
         self.refiner_model_denoise = CFGNoisePredictor(self.refiner_model)

@@ -272,32 +272,6 @@
       ]
     },
     {
-      "id": 28,
-      "type": "SaveImage",
-      "pos": [
-        2465,
-        298
-      ],
-      "size": {
-        "0": 315,
-        "1": 58
-      },
-      "flags": {},
-      "order": 17,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 51
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
       "id": 17,
       "type": "CLIPTextEncodeSDXL",
       "pos": [
@@ -584,7 +558,7 @@
       ],
       "size": {
         "0": 315,
-        "1": 334
+        "1": 546
       },
       "flags": {},
       "order": 11,
@@ -629,12 +603,12 @@
         "enable",
         1,
         "fixed",
-        20,
+        30,
         8,
-        "dpmpp_2m",
+        "dpmpp_2m_sde_gpu",
         "karras",
         0,
-        16,
+        20,
         "enable"
       ]
     },
@@ -707,9 +681,10 @@
         "enable",
         1,
         "fixed",
+        30,
         20,
-        8,
-        "dpmpp_2m",
+        7,
+        "dpmpp_2m_sde_gpu",
         "karras",
         0,
         10000,
@@ -725,7 +700,7 @@
       ],
       "size": {
         "0": 315,
-        "1": 334
+        "1": 546
       },
       "flags": {},
       "order": 13,
@@ -770,11 +745,11 @@
         "disable",
         1,
         "fixed",
-        20,
+        30,
         8,
-        "dpmpp_2m",
+        "dpmpp_2m_sde_gpu",
         "karras",
-        16,
+        20,
         10000,
         "disable"
       ]
@@ -820,32 +795,6 @@
       }
     },
     {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": [
-        2014.1724880000002,
-        -373.70633999999995
-      ],
-      "size": {
-        "0": 210,
-        "1": 58
-      },
-      "flags": {},
-      "order": 16,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 9
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
       "id": 27,
       "type": "VAEDecode",
       "pos": [
@@ -885,6 +834,58 @@
       "properties": {
         "Node name for S&R": "VAEDecode"
       }
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        2014.1724880000002,
+        -373.70633999999995
+      ],
+      "size": {
+        "0": 210,
+        "1": 270
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 9
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ]
+    },
+    {
+      "id": 28,
+      "type": "SaveImage",
+      "pos": [
+        2465,
+        298
+      ],
+      "size": {
+        "0": 315,
+        "1": 270
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 51
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
+      ]
     }
   ],
   "links": [
